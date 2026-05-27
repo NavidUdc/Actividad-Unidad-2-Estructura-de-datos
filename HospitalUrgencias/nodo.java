@@ -22,4 +22,16 @@ class nodo{
     public void setIzq(nodo vecino) {
         this.izq = vecino;
     }
+
+    public Object getDato() {
+        return dato;
+    }
+
+    public nodo getDer() {
+        return der;
+    }
+
+    public nodo getIzq() {
+        return izq;
+    }
 }
