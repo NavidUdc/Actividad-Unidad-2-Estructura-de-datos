@@ -5,7 +5,7 @@ class PacienteUrgencia{
     private String identificacion;
     private String contacto;
 
-    PacienteUrgencias(int codigo_triage, String nombre, String identificacion, String contacto){
+    PacienteUrgencia(int codigo_triage, String nombre, String identificacion, String contacto){
         this.codigo_triage= codigo_triage;
         this.contacto=contacto;
         this.identificacion=identificacion;
@@ -62,7 +62,5 @@ class PacienteUrgencia{
         return codigo_triage == that.codigo_triage && java.util.Objects.equals(nombre, that.nombre) && java.util.Objects.equals(identificacion, that.identificacion) && java.util.Objects.equals(contacto, that.contacto);
     }
 
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), codigo_triage, nombre, identificacion, contacto);
-    }
+    
 }
